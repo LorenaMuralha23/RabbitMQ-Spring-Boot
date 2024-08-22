@@ -6,5 +6,9 @@ public class PriceDTO implements Serializable{
     
     public String productCode;
     public double price;
+
+    public PriceDTO() {
+    }
+    
     
 }

@@ -6,5 +6,8 @@ public class InventoryDTO implements Serializable{
     
     public String productCode;
     public int quantity;
+
+    public InventoryDTO() {
+    }
     
 }
