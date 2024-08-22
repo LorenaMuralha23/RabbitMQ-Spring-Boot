@@ -2,6 +2,8 @@ package com.mycompany.consumer.consumers;
 
 import com.example.demo.constants.RabbitMQConstants;
 import com.example.demo.dtos.InventoryDTO;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.IOException;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;

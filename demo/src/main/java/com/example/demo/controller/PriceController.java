@@ -22,7 +22,7 @@ public class PriceController {
     @PutMapping
     private ResponseEntity changePrice(@RequestBody PriceDTO priceDTO){
         System.out.println(priceDTO.productCode);
-        this.service.sendMessage(RabbitMQConstants.QUEUE_INVENTORY, priceDTO);
+        this.service.sendMessage(RabbitMQConstants.QUEUE_PRICE, priceDTO);
         return new ResponseEntity(HttpStatus.OK);
     }
     
